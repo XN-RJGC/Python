@@ -48,6 +48,14 @@ class heap(object):
                 j = 2*j+1
         self.heap_list[i] = temp
 
+    @property
+    def get_list(self):
+        """
+        Get self.heap_list.
+        :return: list
+        """
+        return self.heap_list
+
     def sift_up(self, start):
         i = start
         j = (i-1)/2
@@ -75,6 +83,7 @@ class heap(object):
         # adjust max-heap from bottom to top
         self.sift_up(len(self.heap_list)-1)
 
+    @property
     def remove(self):
         """
         # Remove top data from max-heap.
@@ -108,7 +117,7 @@ if __name__ == '__main__':
 
     print
     # remove data from max-heap
-    max_heap.remove()
+    max_heap.remove
     for item in max_heap.heap_list:
         print item,
 
