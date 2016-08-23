@@ -3,7 +3,6 @@
 to solute threeSum problem of leetcode
 """
 
-
 def threeSum(self, nums):
     """
     a + b + c = 0
